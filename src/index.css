@@ -1,0 +1,127 @@
+:root {
+  --primary-50: #e6f4ef;
+  --primary-100: #c1e3d6;
+  --primary-200: #8ecdb6;
+  --primary-300: #54b393;
+  --primary-400: #2a9a78;
+  --primary-500: #0b6e4f;
+  --primary-600: #0a5e44;
+  --primary-700: #094d38;
+  --primary-800: #073d2d;
+  --primary-900: #052c21;
+
+  --accent-50: #fdf6e3;
+  --accent-100: #f8e6b8;
+  --accent-200: #f0d088;
+  --accent-300: #e8b547;
+  --accent-400: #d99e2a;
+  --accent-500: #c08818;
+  --accent-600: #9a6d10;
+
+  --neutral-50: #f8faf9;
+  --neutral-100: #f0f2f1;
+  --neutral-200: #e0e4e2;
+  --neutral-300: #c8cfcd;
+  --neutral-400: #9aa3a0;
+  --neutral-500: #6b7470;
+  --neutral-600: #4a524f;
+  --neutral-700: #353c39;
+  --neutral-800: #232927;
+  --neutral-900: #141816;
+
+  --success-500: #1a8a5a;
+  --warning-500: #d97706;
+  --error-500: #dc2626;
+
+  --bg: #fbfcfb;
+  --surface: #ffffff;
+  --text: #1a1f1d;
+  --text-muted: #6b7470;
+  --border: #e0e4e2;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-sm: 0 1px 2px rgba(16,24,21,.06);
+  --shadow: 0 4px 12px rgba(16,24,21,.08);
+  --shadow-lg: 0 12px 32px rgba(16,24,21,.12);
+
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); line-height: 1.2; font-weight: 700; }
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img { display: block; max-width: 100%; }
+input, textarea, select { font-family: inherit; font-size: inherit; }
+
+.container { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+@media (max-width: 640px) { .container { padding: 0 16px; } }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 24px; border-radius: var(--radius); font-weight: 600; font-size: 15px;
+  transition: all .2s ease; white-space: nowrap;
+}
+.btn-primary { background: var(--primary-500); color: #fff; }
+.btn-primary:hover { background: var(--primary-600); transform: translateY(-1px); box-shadow: var(--shadow); }
+.btn-accent { background: var(--accent-300); color: var(--neutral-900); }
+.btn-accent:hover { background: var(--accent-400); transform: translateY(-1px); }
+.btn-outline { border: 1.5px solid var(--border); color: var(--text); background: var(--surface); }
+.btn-outline:hover { border-color: var(--primary-500); color: var(--primary-500); }
+.btn-ghost { color: var(--text-muted); }
+.btn-ghost:hover { color: var(--primary-500); }
+.btn:disabled { opacity: .5; cursor: not-allowed; transform: none; }
+
+.badge {
+  display: inline-flex; align-items: center; padding: 4px 10px;
+  border-radius: 999px; font-size: 12px; font-weight: 600;
+}
+.badge-primary { background: var(--primary-50); color: var(--primary-600); }
+.badge-accent { background: var(--accent-50); color: var(--accent-600); }
+.badge-success { background: #e6f6ee; color: var(--success-500); }
+.badge-warning { background: #fef3e0; color: var(--warning-500); }
+.badge-error { background: #fdeaea; color: var(--error-500); }
+.badge-neutral { background: var(--neutral-100); color: var(--neutral-600); }
+
+.input {
+  width: 100%; padding: 10px 14px; border: 1.5px solid var(--border);
+  border-radius: var(--radius); background: var(--surface); color: var(--text);
+  transition: border-color .2s;
+}
+.input:focus { outline: none; border-color: var(--primary-500); }
+.input::placeholder { color: var(--neutral-400); }
+
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes slideIn { from { transform: translateX(100%); } to { transform: none; } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: none; } }
+.animate-fade { animation: fadeIn .4s ease both; }
+.animate-slide { animation: slideIn .3s ease both; }
+.animate-scale { animation: scaleIn .25s ease both; }
+
+.skeleton {
+  background: linear-gradient(90deg, var(--neutral-100) 25%, var(--neutral-200) 50%, var(--neutral-100) 75%);
+  background-size: 200% 100%; animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
