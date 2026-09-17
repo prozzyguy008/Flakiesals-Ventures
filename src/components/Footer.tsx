@@ -6,14 +6,8 @@ export function Footer() {
     <footer style={{ background: 'var(--neutral-900)', color: 'var(--neutral-300)', marginTop: 64 }}>
       <div className="container" style={{ padding: '48px 24px', display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: 40 }}>
         <div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-            <div style={{ width: 40, height: 40, borderRadius: 10, background: 'var(--primary-500)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span style={{ color: 'var(--accent-300)', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22 }}>F</span>
-            </div>
-            <div>
-              <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 16, color: '#fff' }}>FLAKIESALS</div>
-              <div style={{ fontSize: 10, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--neutral-400)' }}>Ventures</div>
-            </div>
+          <div style={{ marginBottom: 16 }}>
+            <img src="/images/photo_2026-09-01_02-25-50.jpg" alt="FLAKIESALS Ventures" style={{ width: 220, maxWidth: '100%', height: 120, objectFit: 'contain', objectPosition: 'left center', borderRadius: 10 }} />
           </div>
           <p style={{ fontSize: 14, color: 'var(--neutral-400)', maxWidth: 320 }}>
             Your trusted countertop store and souvenir business in Ilorin. Quality kitchen, cookware, and home essentials at fair prices.
