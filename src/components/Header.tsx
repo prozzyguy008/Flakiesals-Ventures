@@ -23,8 +23,12 @@ export function Header() {
   return (
     <header style={{ position: 'sticky', top: 0, zIndex: 100, background: 'rgba(255,255,255,.95)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--border)' }}>
       <div className="container" style={{ display: 'flex', alignItems: 'center', gap: 24, height: 72 }}>
-        <button onClick={() => go({ name: 'home' })} aria-label="FLAKIESALS Ventures home" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
-          <img src="/images/photo_2026-09-01_02-25-50.jpg" alt="FLAKIESALS Ventures" style={{ width: 58, height: 58, objectFit: 'cover', borderRadius: 10 }} />
+        <button onClick={() => go({ name: 'home' })} aria-label="FLAKIESALS Ventures home" style={{ display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
+          <img src="/images/photo_2026-09-01_02-25-50.jpg" alt="FLAKIESALS Ventures" style={{ width: 58, height: 58, objectFit: 'cover', borderRadius: 10, flexShrink: 0 }} />
+          <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.1, textAlign: 'left' }}>
+            <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 18, color: 'var(--text)' }}>FLAKIESALS</span>
+            <span style={{ fontSize: 11, color: 'var(--text-muted)', letterSpacing: 1, textTransform: 'uppercase' }}>Ventures</span>
+          </div>
         </button>
 
         <nav style={{ display: 'flex', gap: 4, flex: 1, marginLeft: 8 }} className="nav-desktop">
