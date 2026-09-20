@@ -1,14 +1,14 @@
 :root {
-  --primary-50: #e6f4ef;
-  --primary-100: #c1e3d6;
-  --primary-200: #8ecdb6;
-  --primary-300: #54b393;
-  --primary-400: #2a9a78;
-  --primary-500: #0b6e4f;
-  --primary-600: #0a5e44;
-  --primary-700: #094d38;
-  --primary-800: #073d2d;
-  --primary-900: #052c21;
+  --primary-50: #f5f3ff;
+  --primary-100: #ede9fe;
+  --primary-200: #ddd6fe;
+  --primary-300: #c4b5fd;
+  --primary-400: #a78bfa;
+  --primary-500: #7c3aed;
+  --primary-600: #6d28d9;
+  --primary-700: #5b21b6;
+  --primary-800: #4c1d95;
+  --primary-900: #3b0764;
 
   --accent-50: #fdf6e3;
   --accent-100: #f8e6b8;

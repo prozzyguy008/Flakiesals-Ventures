@@ -20,7 +20,7 @@ export const initialProducts: Product[] = [
   ['RAF Coffee Bean Grinder 80W', 'Kitchen Tools & Accessories', 'RAF coffee bean grinder, 80W.', 11000],
   ['GDTIMES 12-Inch Solar Rechargeable Fan', 'Home & Household', '12-inch rechargeable fan with solar panel.', 37000],
   ['RAF 2.0L Electric Kettle R.7816', 'Kitchen & Cookware', 'RAF R.7816 electric kettle; 2.0L.', 9500],
-  ['RAF Foldable Travel Steam Iron', 'Home & Household', 'Foldable travel steam iron.', 13500],
+  ['BOTTLES', 'Home & Household', 'Foldable travel steam iron.', 13500],
   ['RAF 8L 1000W Food Processor / Yam Pounder R.7731', 'Kitchen Tools & Accessories', 'RAF R.7731 food processor; 8L, 1000W.', null],
   ['RAF 25L 3-in-1 Electric Oven, Air Fryer & Toaster', 'Kitchen & Cookware', 'RAF 25L electric oven, air fryer and toaster.', 126000],
   ['RAF 3-in-1 Cordless Rechargeable Food Processor R.2862', 'Kitchen Tools & Accessories', 'Cordless rechargeable food processor.', 45000],
